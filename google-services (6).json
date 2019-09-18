@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "828399247772",
+    "firebase_url": "https://freekonomy-9520a.firebaseio.com",
+    "project_id": "freekonomy-9520a",
+    "storage_bucket": "freekonomy-9520a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828399247772:android:6de8df5adbb4f181556859",
+        "android_client_info": {
+          "package_name": "free.freekonomy.freekonoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828399247772-1jvlq743oi0tttcb2he6c18fpl17arvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKHRyq9OCJqrn2XIrO6v_ZWtmXT5ZVqlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828399247772-1jvlq743oi0tttcb2he6c18fpl17arvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

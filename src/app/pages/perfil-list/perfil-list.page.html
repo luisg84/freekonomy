@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-title>Freelancers</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-list>
+        <ion-card mode="ios" *ngFor="let user of users">
+            <ion-card-content>
+                <ion-item lines="none">
+                    <ion-avatar slot="start">
+                        <img [src]="user.imagen">
+                    </ion-avatar>
+                    <ion-label>
+                        <ion-grid>
+                            <ion-row>
+                                {{user.nombre}}
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col class="ion-no-padding" text-center size-xs="2">
+                                    <ion-icon name="contact"></ion-icon>
+                                </ion-col>
+                                <ion-col class="ion-no-padding" size-xs="10"> {{user.user}} </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col class="ion-no-padding" text-center size-xs="2">
+                                    <ion-icon name="star"></ion-icon>
+                                </ion-col>
+                                <ion-col class="ion-no-padding" size-xs="10">
+                                    {{user.calificacion}}
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col class="ion-no-padding" text-center size-xs="2">
+                                    <ion-icon name="pin"></ion-icon>
+                                </ion-col>
+                                <ion-col class="ion-no-padding" size-xs="10"> {{user.ciudad}}</ion-col>
+                            </ion-row>
+
+
+                        </ion-grid>
+
+                    </ion-label>
+                </ion-item>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+</ion-content>
