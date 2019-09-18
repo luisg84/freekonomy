@@ -1,5 +1,7 @@
 {
   "name": "freekonomy",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
