@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {USERS} from '../../data/data.users';
 import { from } from 'rxjs';
 import { User } from '../../interfaces/user.interface';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,9 +14,14 @@ export class PerfilListPage implements OnInit {
 
   users:User[] = [];
 
-  constructor() { 
+  constructor(public router: Router) { 
 
     this.users = USERS.slice(0);
+  }
+
+  irPerfil(name:string){
+    console.log("llendo al perfil de: "+name);
+    this.router.navigate(['/perfil']);
   }
 
   ngOnInit() {
