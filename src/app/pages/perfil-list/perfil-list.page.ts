@@ -19,9 +19,9 @@ export class PerfilListPage implements OnInit {
     this.users = USERS.slice(0);
   }
 
-  irPerfil(name:string){
-    console.log("llendo al perfil de: "+name);
-    this.router.navigate(['/perfil']);
+  irPerfil(id:string){
+    console.log("llendo al perfil de: "+id);
+    this.router.navigate(['/perfil/'+id]);
   }
 
   ngOnInit() {

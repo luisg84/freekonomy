@@ -1,9 +1,83 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
-  </ion-toolbar>
+    <ion-toolbar mode="ios">
+        <ion-title>perfil</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngFor="let user of users">
+    <div *ngIf="user.id==idperfil">
+
+        <div class="infotop">
+            <div class="disponibilidad">
+                <h4 class="cuad">disponible</h4>
+
+            </div>
+
+            <h2 class="cuad">${{user.preciomin}}</h2>
+
+
+
+
+        </div>
+        <div class="info">
+            <ion-grid>
+                <ion-row>
+                    <ion-col align-items-center>
+                        <div class="picperf">
+                            <ion-item lines="none">
+                                <ion-avatar slot="start">
+                                    <img [src]="user.imagen">
+                                </ion-avatar>
+                            </ion-item>
+                        </div>
+
+                    </ion-col>
+
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <div class="data">
+                            <h1 class="sinmargin">Joely G. castañeda Gonzales</h1>
+                            <h3 class="sinmargin">@joely</h3>
+                            <p class="sinmargin">Orizaba</p>
+                            <p class="morado ">Diseñadora UX/UI</p>
+                        </div>
+                    </ion-col>
+
+                </ion-row>
+
+                <ion-row>
+                    <ion-col align-items-center>
+                        <div class="picperf rank">
+                            <ion-item lines="none" class="rank">
+                                <h1 class="verde">4.5</h1>
+                                <ion-icon name="star" class="estrella rank"></ion-icon>
+                            </ion-item>
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col class="bot">
+                        <ion-button expand="block" color="danger" mode="ios">contactar</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
 
 </ion-content>
