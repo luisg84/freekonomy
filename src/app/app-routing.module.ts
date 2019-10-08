@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'perfil-list', loadChildren: './pages/perfil-list/perfil-list.module#PerfilListPageModule' },
-  { path: 'perfil/:id', loadChildren: './pages/perfil/perfil.module#PerfilPageModule' },
+  { path: 'perfil/:id/:name/:user/:ciudad/:tipo/:preciomin/:calificacion', loadChildren: './pages/perfil/perfil.module#PerfilPageModule' },
 ];
 
 @NgModule({

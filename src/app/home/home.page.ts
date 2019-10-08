@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  item={
+    src:"src/assets/img/card.png"
+  }
 
   constructor(public router: Router) {}
     

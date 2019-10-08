@@ -4,8 +4,8 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content *ngFor="let user of users">
-    <div *ngIf="user.id==idperfil">
+<ion-content>
+    <div>
 
         <div class="infotop">
             <div class="disponibilidad">
@@ -13,7 +13,7 @@
 
             </div>
 
-            <h2 class="cuad">${{user.preciomin}}</h2>
+            <h2 class="cuad">${{preciomin}}</h2>
 
 
 
@@ -26,7 +26,7 @@
                         <div class="picperf">
                             <ion-item lines="none">
                                 <ion-avatar slot="start">
-                                    <img [src]="user.imagen">
+                                    <img [src]="this.imgrut">
                                 </ion-avatar>
                             </ion-item>
                         </div>
@@ -38,10 +38,10 @@
                 <ion-row>
                     <ion-col>
                         <div class="data">
-                            <h1 class="sinmargin">Joely G. castañeda Gonzales</h1>
-                            <h3 class="sinmargin">@joely</h3>
-                            <p class="sinmargin">Orizaba</p>
-                            <p class="morado ">Diseñadora UX/UI</p>
+                            <h1 class="sinmargin">{{nameU}}</h1>
+                            <h3 class="sinmargin">{{userp}}</h3>
+                            <p class="sinmargin">{{ciudad}}</p>
+                            <p class="morado ">{{tipo}}</p>
                         </div>
                     </ion-col>
 
@@ -51,7 +51,7 @@
                     <ion-col align-items-center>
                         <div class="picperf rank">
                             <ion-item lines="none" class="rank">
-                                <h1 class="verde">4.5</h1>
+                                <h1 class="verde">{{calificacion}}</h1>
                                 <ion-icon name="star" class="estrella rank"></ion-icon>
                             </ion-item>
                         </div>

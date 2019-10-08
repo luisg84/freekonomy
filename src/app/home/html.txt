@@ -1,0 +1,65 @@
+<ion-content color="">
+    <ion-grid class="ion-no-padding">
+  
+      <!-- imágen -->
+      <!-- <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="4" size-xs="12">  
+          <ion-img [src]="item.src"></ion-img>
+        </ion-col>
+      </ion-row> -->
+  
+      <!-- texto -->
+      <ion-row justify-content-center class="ion-no-padding" >
+        <ion-col align-self-center size-md="6" size-lg="4" size-xs="12" class="ion-no-padding">
+          <div text-left>
+              
+            <p><b>Hola, Luis </b>  </p>
+            <p>Ya queremos empezar a trabajar contigo ¿Qué hacemos primero?</p>
+
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row justify-content-center>
+          <ion-col ion-col align-self-center size-md="6" size-lg="4" size-xs="12" class="ion-no-padding">
+              <ion-card class="ion-no-padding">
+                  <!-- <ion-card-header>
+                     Buscador
+                  </ion-card-header> -->
+
+                  <ion-card-content>
+                        <ion-img [src]="item.src"></ion-img>
+                  </ion-card-content>
+              </ion-card>
+            </ion-col>
+      </ion-row>
+      <!-- botón uno -->
+      <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="4" size-xs="10" class="ion-no-padding">
+          <div text-right>
+            <ion-button routerLink="/login" color="secondary">Comenzar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    
+      <!-- botón dos -->
+      <!-- <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="4" size-xs="12" class="ion-no-padding">
+          <div text-center>
+            <ion-button fill="outline" routerLink="/signup" color="stugreen">¿Eres nuevo? Registrate</ion-button>
+          </div>
+        </ion-col>
+      </ion-row> -->
+  
+      <!-- redes sociales -->
+      <!-- <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="4" size-xs="12">
+          <div text-center>
+            <ion-button color="facebook"><ion-icon name="logo-facebook" ></ion-icon></ion-button>
+            <ion-button color="twitter"><ion-icon name="logo-twitter" ></ion-icon></ion-button>
+          </div>
+        </ion-col>
+      </ion-row> -->
+        
+  </ion-grid>
+  </ion-content>

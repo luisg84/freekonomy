@@ -11,14 +11,17 @@ export const USERS = [
       calificacion:" 4.5"
     },
     {
+        
         id: "2",
-        user: "@Luisg_84",
-        nombre: "Luis G. Sanchez Amador",
-        imagen: "assets/perfilpic/lucho.jpg",
-        ciudad: "CDMX",
-        tipo: "Diseñador UI/UX",
-        preciomin: "5000",
-        calificacion: "3"
+      user: "@luisg84",
+      nombre: "luis Gilberto Sanchez amador",
+      imagen: "assets/perfilpic/lucho.jpg",
+      ciudad: "CDMX",
+      tipo: "diseñador ux-ui",
+      preciomin: "5000",
+      calificacion:" 4.5"
+       
+        
     },
     {
         id: "3",

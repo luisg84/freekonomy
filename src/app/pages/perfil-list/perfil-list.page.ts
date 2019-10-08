@@ -19,12 +19,13 @@ export class PerfilListPage implements OnInit {
     this.users = USERS.slice(0);
   }
 
-  irPerfil(id:string){
+  irPerfil(id:string,name:string,user:string,imagen:string,ciudad:string,tipo:string,preciomin:string,calificacion:string){
     console.log("llendo al perfil de: "+id);
-    this.router.navigate(['/perfil/'+id]);
+    this.router.navigate(['/perfil/'+id+'/'+name+'/'+user+'/'+ciudad+'/'+tipo+'/'+preciomin+'/'+calificacion]);
   }
 
   ngOnInit() {
+ 
   }
 
 }

@@ -8,7 +8,7 @@
 
 
     <ion-list>
-        <ion-card mode="ios" *ngFor="let user of users" (click)="irPerfil(this.user.id)">
+        <ion-card mode="ios" *ngFor="let user of users" (click)="irPerfil(this.user.id,this.user.nombre,this.user.user,this.user.imagen,this.user.ciudad,this.user.tipo,this.user.preciomin,this.user.calificacion)">
             <ion-card-content>
                 <ion-item lines="none">
                     <ion-avatar slot="start">
